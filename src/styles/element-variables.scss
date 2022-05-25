@@ -1,0 +1,90 @@
+/* icon 字体路径变量，必需 */
+$--font-path: '~element-ui/lib/theme-chalk/fonts';
+
+/* Color
+-------------------------- */
+$--color-primary: #4B8CDC !default;;
+
+/// color|1|Functional Color|1
+// $--color-success: #67C23A !default;
+// /// color|1|Functional Color|1
+$--color-warning: #F0AA32 !default;
+// /// color|1|Functional Color|1
+$--color-danger: #ED3838 !default;
+// /// color|1|Functional Color|1
+// $--color-info: #909399 !default;
+
+/// color|1|Font Color|2
+$--color-text-primary: #303133 !default;
+// /// color|1|Font Color|2
+$--color-text-regular: #606266 !default;
+// /// color|1|Font Color|2
+$--color-text-secondary: #909399 !default;
+// /// color|1|Font Color|2
+$--color-text-placeholder: #C8C8C8 !default;
+// /// color|1|Border Color|3
+$--border-color-base: #DCDFE6 !default;
+// /// color|1|Border Color|3
+$--border-color-light: #E4E7ED !default;
+// /// color|1|Border Color|3
+$--border-color-lighter: #EBEEF5 !default;
+// /// color|1|Border Color|3
+// $--border-color-extra-light: #F2F6FC !default;
+
+/* Border
+-------------------------- */
+// $--border-color-hover
+
+/* Input
+-------------------------- */
+// $--input-border-color: #C0C4CC !default;
+
+/* Select
+-------------------------- */
+
+/* MessageBox
+-------------------------- */
+$--messagebox-info-color: #788aad;
+
+@import "~element-ui/packages/theme-chalk/src/index";
+
+// loading-mask
+.el-loading-mask {
+  background-color: rgba(255,255,255,.4);
+}
+
+// message-box
+.el-message-box__status {
+  top: initial;
+  transform: initial;
+}
+
+// transfer checkbox
+.el-transfer-panel__item.el-checkbox {
+  display: block;
+}
+
+// dialog
+.el-dialog__header {
+  padding-top: 18px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid $--border-color-base;
+}
+.el-dialog__footer {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-top: 1px solid $--border-color-base;
+}
+
+// button
+// .el-button--text.el-button--mini {
+//   font-size: 13px;
+// }
+
+// link
+.el-link.el-link--primary {
+  color: $--color-primary;
+}
+.el-link.el-link--mini {
+  font-size: 13px;
+}

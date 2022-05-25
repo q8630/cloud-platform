@@ -1,0 +1,79 @@
+@import './variables.scss';
+@import './mixin.scss';
+
+body {
+  height: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+}
+
+// 盒子模型
+* {
+  box-sizing: border-box;
+}
+
+// global style
+.layout-content > .page-content {
+  // min-height: calc(100vh - #{$navbarHeight + $tabsHeight + $padding-spacing * 2});
+  padding: $padding-spacing;
+  background-color: #fff;
+}
+.page-content > .toolbar {
+  margin-bottom: $padding-spacing;
+}
+.el-table + .el-pagination {
+  margin-top: $padding-spacing;
+  text-align: right;
+}
+.el-table th {
+  line-height: 28px;
+}
+
+// dialog form
+.el-dialog .el-dialog__body .el-form-item {
+  .el-form-item__label {
+    width: 96px;
+  }
+
+  .el-form-item__content {
+    margin-left: 96px;
+    > .el-input,
+    > .el-select,
+    > .el-cascader,
+    > .el-autocomplete,
+    .number-input {
+      width: 90%;
+    }
+  }
+}
+
+// page-search-form
+.el-form.page-search-form {
+  background: #F5F7FA;
+  padding: 18px 10px 8px 10px;
+
+  .el-form-item {
+    margin-bottom: 10px;
+
+    .el-form-item__label {
+      min-width: 68px;
+    }
+
+    .el-form-item__content {
+      > .el-input,
+      > .el-select,
+      > .el-cascader,
+      > .el-autocomplete,
+      .number-input {
+        width: 190px;
+      }
+
+      > .el-date-editor {
+        width: 461px;
+      }
+    }
+  }
+}
+
